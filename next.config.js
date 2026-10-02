@@ -1,6 +1,9 @@
-export default {
-  metadata: {
-    title: 'Creator AI Studio',
-    description: 'Script-to-video AI platform for creators and YouTube growth',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [{ protocol: 'https', hostname: '**' }],
   },
 };
+
+module.exports = nextConfig;
